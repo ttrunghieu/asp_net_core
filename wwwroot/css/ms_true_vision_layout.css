@@ -1,0 +1,309 @@
+﻿
+
+
+
+
+.ms_p_forbidden {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.logo {
+    height: 50px!important;
+}
+/* page styles */
+
+.ms-test {
+    border: solid !important;
+    border-width: thin !important;
+    border-color: red !important;
+    display: none;
+    border: solid;
+    border-width: medium;
+    border-color: red;
+}
+
+.ms-ctn-non-permission {
+    border: 1px solid #28a745;
+    text-align: center;
+    vertical-align: bottom;
+    margin-top: 3rem;
+    width: auto;
+    padding: 2rem;
+}
+
+.ms-p-non-permission {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/*body page*/
+.ms-body {
+    /*margin-top: 1rem;*/
+    /*border-style:solid;*/
+}
+
+/* button */
+.ms-btn {
+    margin: 0.5rem;
+    background-color: transparent;
+    border-style: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+    .ms-btn:hover {
+        font-weight: bolder;
+    }
+
+.ms-btn-edit {
+    width: 10rem;
+    color: white;
+    background-color: darkgreen;
+}
+
+.ms-btn-multi-delete {
+    width: 10rem;
+    color: white;
+    background-color: darkmagenta;
+}
+
+.ms-btn-multi-edit {
+    width: 10rem;
+    color: darkmagenta;
+    background-color: #ffd800;
+}
+
+.ms-btn-add {
+    width: 10rem;
+    color: white;
+    background-color: darkblue;
+}
+
+.ms-btn-remove {
+    width: 10rem;
+    color: white;
+    background-color: darkgreen;
+}
+
+.ms-btn-update {
+    width: 10rem;
+    color: white;
+    background-color: darkgoldenrod;
+}
+
+.ms-btn-price {
+    width: 10rem;
+    color: white;
+    background-color: darkblue;
+}
+.ms-btn-view {
+    width: 10rem;
+    color: white;
+    background-color: darkgreen;
+}
+
+.ms-btn-purchase {
+    width: 10rem;
+    color: white;
+    background-color: green;
+}
+.ms-btn-submit {
+    width: 10rem;
+    color: white;
+    background-color: darkblue;
+}
+
+
+
+.ms-div-purchase {
+    display: flex;
+}
+
+.ms_div_forbidden {
+    border: 1px solid #28a745;
+    text-align: center;
+    vertical-align: bottom;
+    margin-top: 3rem;
+    width: auto;
+    padding: 2rem;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ms_div_radio_tabs {
+}
+
+.ms-div-search {
+    width: auto;
+    color: black;
+}
+
+.ms-div-add {
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+@media (max-width: 50rem) {
+    .ms-div-add {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 50rem) {
+    .ms-div-add {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+.ms-img-icon {
+    height: 28px;
+    width: 28px;
+    float: left;
+    margin: 2px 10px 0 0;
+}
+.ms-select-add {
+    padding: 0.5rem 1rem;
+    color: #495057;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    width:100%;
+    text-align:center;
+    border: 1px solid #ced4da;
+    max-width: 10rem;
+    /*border-color:red;*/
+    /*min-width: 10rem;*/
+    /*flex: 1;*/
+}
+
+.ms-td-btn {
+    padding-left: 0;
+    text-align: center;
+}
+
+.ms-div-label {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    /*font-weight: bold;*/
+    /*border: 1px solid #ced4da;*/
+    /*border-color: red;*/
+}
+.ms-form {
+    /*display: ruby;*/
+    /*display: block;*/
+}
+
+
+
+
+.ms-table {
+    margin-bottom: 0rem;
+}
+
+.ms-thead {
+}
+
+.ms-tbody {
+}
+
+.ms-thead-tr {
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-color: black;
+    width: fit-content;
+}
+
+.ms-tbody-tr {
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-color: yellow;
+    width: fit-content;
+}
+
+.ms-td-search {
+    min-width: 10rem;
+    text-align: left;
+}
+
+.ms-td-chkbx {
+    padding-left: 0;
+    text-align: left;
+    width: 2rem;
+}
+
+
+
+.ms-js-tr-search-data {
+}
+
+
+.ms-div-action {
+    white-space: nowrap;
+}
+
+.ms-table-add-number {
+}
+
+
+
+/******************************************** ms_service *******************************************************/
+
+.app-main__inner:has(.ms_service_body_inner_container) {
+    display: flex;
+    padding: 10px;
+}
+
+.ms_service_body_inner_container {
+    display: flex;
+}
+
+.ms_service_table {
+    /*border: 1px solid #ced4da;*/
+    /*border-color: red;*/
+}
+
+.ms_service_div_key {
+    margin: 0.5rem;
+}
+
+.ms_service_div_value {
+}
+
+.ms_service_div_update {
+}
+
+.ms_service_input {
+    border-width: 1px;
+    border-style: inset;
+    width: 500px;
+}
+
+.ms_service_div_value > input:focus {
+    outline: none;
+}
+
+.ms_service_btn {
+    background-color: transparent;
+    border-style: none;
+    padding: 0.25rem;
+    border-radius: 0.2rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 100%;
+    color: white;
+    background-color: darkgreen;
+}
+
+    .ms_service_btn:hover {
+        font-weight: bolder;
+    }

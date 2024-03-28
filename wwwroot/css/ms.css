@@ -1,0 +1,674 @@
+﻿
+:root {
+}
+
+/*********** manage/message ***************/
+.ms_div_radio_tabs {
+    display: flex;
+}
+
+    .ms_div_radio_tabs input {
+        margin: 0;
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+        .ms_div_radio_tabs input + label {
+            font-size: 1rem;
+            padding: 0.25rem;
+            text-align: center;
+            width: 100%;
+            background-color: #ECF0F1;
+        }
+
+            .ms_div_radio_tabs input + label:first-of-type {
+            }
+
+            .ms_div_radio_tabs input + label:last-of-type {
+            }
+
+        .ms_div_radio_tabs input:hover + label {
+            background-color: #F4F6F7;
+            cursor: pointer;
+        }
+
+        .ms_div_radio_tabs input:checked + label {
+            border: none;
+            background-color: transparent;
+            cursor: default;
+        }
+
+        .ms_div_radio_tabs input:focus + label {
+        }
+
+
+
+.ms_main_inner_img_feedback_view {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ms_main_inner_input {
+    padding: 0.25rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.ms_main_inner_value {
+    margin-left: 0rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+    padding: 0;
+    border-radius: 0rem;
+    border: 1px inset #ced4da;
+    border-width: 1px;
+    width: 100%;
+    display: flex;
+    /*height:3rem;*/
+    /*width: 50rem;*/
+    /*border:none;*/
+}
+
+    .ms_main_inner_value > input:focus {
+        outline: none;
+    }
+
+    .ms_main_inner_value > select:focus {
+        outline: none;
+    }
+
+    .ms_main_inner_value:has(.ms_main_inner_radio_toggle) {
+        border: none;
+    }
+
+.ms_main_inner_table {
+    width: 100%;
+}
+
+    .ms_main_inner_table tr td:first-child {
+        width: 1%;
+        white-space: nowrap;
+    }
+
+.ms_main_inner_select {
+    padding: 0.25rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    /*color: #495057;*/
+    /*background-color: #fff;*/
+    /*border-radius: 0.25rem;*/
+    /*border: 1px solid #ced4da;*/
+    /*max-width: 10rem;*/
+    /*border-color:red;*/
+    /*min-width: 10rem;*/
+    /*flex: 1;*/
+    /*border: 1px solid #ced4da;*/
+    /*border-color: red;*/
+    /*border: 1px solid #EC407A;*/
+}
+
+
+/************************/
+
+
+
+
+
+
+/***********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.app-main__inner:has(.ms_number_body_inner_container) {
+    display: flex;
+    padding: 10px;
+}
+
+.ms_number_body_inner_container {
+    display: flex;
+}
+
+.ms_number_table {
+    /*border: 1px solid #ced4da;*/
+    /*border-color: red;*/
+}
+
+.ms_number_div_key {
+    margin: 0.5rem;
+}
+
+.ms_number_div_value {
+}
+
+.ms_number_div_update {
+}
+
+
+.ms_number_div_value > input:focus {
+    outline: none;
+}
+
+.ms_number_btn {
+    background-color: transparent;
+    border-style: none;
+    padding: 0.25rem;
+    border-radius: 0rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 100%;
+    color: white;
+    background-color: darkgreen;
+}
+
+    .ms_number_btn:hover {
+        font-weight: bolder;
+    }
+
+
+/* TOGGLE STYLING */
+.ms_main_inner_table_add {
+    /*display:flex;*/
+}
+
+.ms_main_inner_radio_toggle {
+    box-sizing: border-box;
+    font-size: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+    .ms_main_inner_radio_toggle input {
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: -9999px;
+    }
+
+        .ms_main_inner_radio_toggle input + label {
+            padding: 0.25rem;
+            text-align: center;
+            width: 100%;
+            border-radius: 0rem;
+            box-shadow: 0px 1px 3px #efefef;
+            border: 1px outset #ced4da;
+            transition: border-color 0.15s ease-out, color 0.25s ease-out, background-color 0.15s ease-out, box-shadow 0.15s ease-out;
+            font-size: 1rem;
+            box-sizing: border-box;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 0;
+            margin-right: 0.25rem;
+            margin-left: 0.25rem;
+        }
+
+            .ms_main_inner_radio_toggle input + label:first-of-type {
+                background-color: #fdfdff;
+                /*border-right: none;*/
+            }
+
+            .ms_main_inner_radio_toggle input + label:last-of-type {
+                //border-left: none;
+            }
+
+        .ms_main_inner_radio_toggle input:hover + label {
+            background-color: #4B9DEA;
+            color: #FFF;
+        }
+
+        .ms_main_inner_radio_toggle input:checked + label {
+            background-color: #4B9DEA;
+            color: #FFF;
+        }
+
+        .ms_main_inner_radio_toggle input:focus + label {
+            /*outline: solid 1px #CCC;*/
+            /*outline-offset: 0.45rem;*/
+        }
+
+@media (max-width: 800px) {
+    .ms_main_inner_radio_toggle input + label {
+        padding: 0.75rem 0.25rem;
+        flex: 0 0 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/*********** input ***************/
+/*********** input ***************/
+/*********** input ***************/
+/*********** others ***************/
+/*
+    border-color: red;
+    border: 1px solid #EC407A;
+    margin-bottom: 0rem;
+    box-shadow: 0px 0px 50px 0px #00838F;
+    background-color: #4B9DEA;
+    width: auto;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #ABB2B9;
+    border-color: #8cc1c1;
+    border: 1px solid #8cc1c1;
+    flex: 1;
+    margin-bottom: 0rem;
+    color: black;
+    box-shadow: 0px 0px 50px 0px #00838F;
+    background-color: #4B9DEA;
+    width: auto;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #ABB2B9;
+    box-shadow: 0px 0px 50px 0px #00838F;
+    border-color: red;
+    border: 1px solid #EC407A;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    background-color: #4B9DEA;
+*/
+.ms_textarea {
+    min-height: 4rem;
+    width: 100%;
+    border: 1px inset #ABB2B9;
+}
+
+    .ms_textarea:focus {
+        outline: none;
+        border-color: #ABEBC6;
+    }
+
+    .ms_textarea:read-only {
+        outline: none;
+        border: none;
+        background: #d0d3d4;
+    }
+
+.ms_textarea_large {
+    margin: 0.5rem 0;
+    margin-bottom: 0rem;
+    min-height: 60vh;
+    width: 100%;
+    border: 1px inset #ABB2B9;
+}
+
+    .ms_textarea_large:focus {
+        outline: none;
+        border-color: #ABB2B9;
+    }
+
+    .ms_textarea_large:read-only {
+        outline: none;
+        border: none;
+        background: #d0d3d4;
+    }
+/*
+    border: 0 solid #e5e7eb;
+    border-top: 1px solid #e9ecef;
+        border: 1px solid black;
+        border-bottom: 2px solid #0099CC;
+        padding: 0rem;
+        vertical-align: bottom;
+        border: 1px solid black;
+        border-top: 2px solid #e9ecef;
+        border-bottom: 2px solid black;
+
+        .ms_table thead + thead {
+        }
+
+    .ms_table tbody {
+    }
+
+        .ms_table tbody + tbody {
+        }
+
+
+
+    .ms_table th, .ms_table td {
+        border-top: 1px solid #e9ecef;
+    }
+
+    .ms_table td {
+    }
+
+    .ms_table th {
+    }
+    .ms_table tbody tr:hover {
+        background-color: #ddd;
+    }
+
+*/
+.ms_table {
+    margin: 0px;
+    width: 100%;
+}
+
+    .ms_table thead {
+        color: #0099CC;
+    }
+    .ms_table th, .ms_table td {
+        border-top: 1px solid #e9ecef;
+    }
+
+
+.ms_div_deposit_amount {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #07a;
+    border-radius: 0.4rem;
+    display: flex;
+    margin: auto;
+    width: 11rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .ms_div_deposit_amount:hover {
+        border: 2px solid #8cc1c1;
+    }
+
+    .ms_div_deposit_amount:focus {
+        border: 2px solid #8cc1c1;
+    }
+
+.ms_input_deposit_amount {
+    font: 500 40px/40px arial;
+    border: 0;
+    width: 8rem;
+    margin-right: 0.4rem;
+}
+
+    .ms_input_deposit_amount:focus {
+        outline: none;
+        border-color: #ABEBC6;
+    }
+
+.ms_input_deposit_amount_usd {
+    font: 500 40px/40px arial;
+    border: 0;
+    width: 2rem;
+    margin-left: 0.4rem;
+}
+
+    .ms_input_deposit_amount_usd:focus {
+        outline: none;
+        border-color: #ABEBC6;
+    }
+
+.slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 35px;
+    height: 35px;
+    background: #07a;
+    border: 2px solid #07a;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+    .slider input[type="range"]::-webkit-slider-thumb:hover {
+        border: 2px solid #8cc1c1;
+        background: #8cc1c1;
+    }
+
+
+.ms_div_amount_nav {
+    border-radius: 0.2rem;
+    color: white;
+    background-color: #07a;
+}
+
+    .ms_div_amount_nav:hover {
+        border-radius: 0.2rem;
+        color: white;
+        background-color: #8cc1c1;
+    }
+
+    .ms_div_amount_nav > div > span {
+    }
+
+
+/*********** div ***************/
+/*
+    border-color: red;
+    border: 1px solid #EC407A;
+*/
+.ms_div_textarea {
+    margin: 0.4rem 0;
+}
+
+/*********** img ***************/
+/*
+    border-color: red;
+    border: 1px solid #EC407A;
+*/
+.ms_img_logo {
+    height: 1.5rem;
+    position: relative;
+    top: 0rem;
+}
+/************ btn ************/
+/*
+    border-color: red;
+    border: 1px solid #EC407A;
+    font: 1rem bold;
+    background-color: #FFBB00;
+    background-color: inherit;
+    background-color: #0099CC;
+*/
+.ms_btn {
+    margin-bottom: 0.25rem;
+    padding: 0.75rem;
+    border-radius: 0.2rem;
+    width: 8rem;
+    color: white;
+    margin: 0;
+}
+
+    .ms_btn:hover {
+        color: #F0F4C3;
+    }
+
+.ms_btn_deposit_payment {
+    position:absolute;
+    top:-1000px;
+    left:-1000px;
+}
+.ms_btn_deposit_payment:hover {
+    border:none;
+    box-shadow:none;
+}
+.ms_btn_add {
+    background-color: #00838F;
+}
+
+.ms_btn_view {
+    background-color: #017E30;
+    width: 100%;
+}
+
+.ms_btn_folder {
+    text-align: left;
+    width: 100%;
+    height: 2rem;
+    background-color: #FFCC00;
+}
+
+.ms_btn_file {
+    text-align: left;
+    width: 100%;
+    height: 2rem;
+    background-color: inherit;
+}
+
+.ms_btn_action_light {
+    background-color: #0099CC;
+    width: 100%;
+    height: 2rem;
+}
+
+.ms_btn_action_dark {
+    background-color: #7733CC;
+    width: 100%;
+    height: 2rem;
+}
+
+.ms_btn_edit {
+    background-color: #303F9F;
+}
+
+.ms_btn_submit {
+    background-color: #770077;
+}
+
+.ms_btn_cancel {
+    background-color: #FFAA00;
+}
+
+.ms_btn_delete {
+    background-color: #DD0000;
+}
+
+.ms_btn_info {
+    background-color: #2196F3;
+}
+
+.ms_btn_success {
+    background-color: #4CAF50;
+}
+
+.ms_btn_warning {
+    background-color: #FFBB33;
+}
+
+.ms_btn_danger {
+    background-color: #f44336;
+}
+
+/*********** input ***************/
+/*
+    border-color: red;
+    border: 1px solid #EC407A;
+*/
+.ms_input {
+    width: 100%;
+    padding: 0.5rem;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #ABB2B9;
+}
+
+    .ms_input:focus {
+        outline: none;
+        border-color: #ABEBC6;
+    }
+
+    .ms_input:read-only {
+        outline: none;
+        border: none;
+        background: #d0d3d4;
+    }
+
+.ms_input_price {
+    width: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: darkblue;
+    background-color: wheat;
+}
+
+.ms_input_chkbx {
+    width: 1.5rem; /* Adjust size as needed */
+    height: 1.5rem; /* Adjust size as needed */
+}
+
+.ms_input_add {
+    display: block;
+    width: 20rem;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    min-width: 15rem;
+}
+
+.ms_input_submit {
+    display: block;
+    width: 20rem;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    min-width: 15rem;
+}
+
+
+.ms_input_search {
+    padding: 0.5rem;
+    width: 15rem;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #ABB2B9;
+}
+
+    .ms_input_search:focus {
+        outline: none;
+        border-color: #ABEBC6;
+    }
+
+
+/***********************************/
+/***********************************/
+/***********************************/
+/***********************************/

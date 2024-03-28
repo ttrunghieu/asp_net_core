@@ -1,0 +1,157 @@
+/*https://codepen.io/fchazal/pen/ZEOPVb*/
+/*https://upload.wikimedia.org/wikipedia/commons/c/c1/Penrose-dreieck.svg*/
+/*https://en.wikipedia.org/wiki/File:Penrose_square.svg*/
+:root {
+    /*--penrose-length: 200px;*/
+    --penrose-length: 30px;
+    /*--penrose-thickness: 10px;*/
+    --penrose-thickness: calc(var(--penrose-length)/5);
+    /*--penrose-width: 210px;*/
+    --penrose-width: calc(var(--penrose-length) + var(--penrose-thickness));
+    /*--penrose-height: 199.1858428694px;*/
+    --penrose-height: calc((var(--penrose-length) + 3 * var(--penrose-thickness)) * var(--penrose-sqrt));
+    /*--penrose-time: 3s;*/
+    --penrose-time: 10s;
+    --penrose-sqrt: 0.86602540378;
+}
+
+.ms_penrose {
+    position: absolute;
+    /*width: 210px;*/
+    width: calc(var(--penrose-width));
+    /*--penrose-height: 199.1858428694px;*/
+    height: calc(var(--penrose-height));
+    box-sizing: content-box;
+    transform-origin: 50% 66.666666%;
+}
+@keyframes move {
+    0% {
+        transform-origin: 50% 50%;
+    }
+
+    40% {
+        transform-origin: 50% 66.666666%;
+    }
+
+    60% {
+        transform-origin: 50% 66.666666%;
+    }
+
+    100% {
+        transform-origin: 50% 50%;
+    }
+}
+.ms_penrose > div {
+    position: absolute;
+    bottom: 0;
+}
+
+        .ms_penrose > div:nth-of-type(1) {
+            /*width: 190px;*/
+            width: calc(var(--penrose-width) / 1.5);
+            /*height: 8.6602540378px;*/
+            height: calc(var(--penrose-height) / 8);
+            transform-origin: 0% 100%;
+            transform: translateX(calc(var(--penrose-thickness))) rotate(-60deg) skewX(-30deg);
+        }
+
+        .ms_penrose > div:nth-of-type(2) {
+            width: var(--penrose-width);
+            height: calc(var(--penrose-height) / 8);
+            background: rgba(0, 255, 0, 0.5);
+            transform-origin: 100% 100%;
+            transform: translate(0) skewX(-30deg);
+        }
+
+    /*************************************/
+    .ms_penrose:nth-child(1) {
+        transform: rotateZ(0deg);
+    }
+
+        .ms_penrose:nth-child(1) > div {
+            animation: color1 calc(var(--penrose-time)) ease infinite;
+        }
+
+@keyframes color1 {
+    0% {
+        background: aqua;
+    }
+
+    30% {
+        background: #f57f17;
+    }
+
+    60% {
+        background: dodgerblue;
+    }
+
+    100% {
+        background: aqua;
+    }
+}
+
+.ms_penrose:nth-child(2) {
+    transform: rotateZ(120deg);
+}
+
+    .ms_penrose:nth-child(2) > div {
+        animation: color2 calc(var(--penrose-time)) ease infinite;
+    }
+
+@keyframes color2 {
+    0% {
+        background: #f57f17;
+    }
+
+    30% {
+        background: dodgerblue;
+    }
+
+    60% {
+        background: aqua;
+    }
+
+    100% {
+        background: #f57f17;
+    }
+}
+
+.ms_penrose:nth-child(3) {
+    transform: rotateZ(240deg);
+}
+
+    .ms_penrose:nth-child(3) > div {
+        animation: color3 calc(var(--penrose-time)) ease infinite;
+    }
+
+@keyframes color3 {
+    0% {
+        background: dodgerblue;
+    }
+
+    30% {
+        background: aqua;
+    }
+
+    60% {
+        background: #f57f17;
+    }
+
+    100% {
+        background: dodgerblue;
+    }
+}
+
+.ms_div_penrose {
+    position: relative;
+    display: block;
+    /*width: 220px;*/
+    width: calc(var(--penrose-length) + 2 * var(--penrose-thickness));
+    height: calc(var(--penrose-height));
+    /*padding: 5px;*/
+    padding: calc(var(--penrose-thickness)/2);
+    padding-top: 0;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: red;*/
+}

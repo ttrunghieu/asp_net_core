@@ -1,0 +1,115 @@
+
+:root {
+    --tw-text-opacity: 1;
+}
+
+.ms_body_container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    background: #f1f4f6;
+}
+
+
+    .ms_body_container .app-sidebar {
+        background: #fff
+    }
+
+    .ms_body_container .app-page-title {
+        background: rgba(255,255,255,.45)
+    }
+
+    .ms_body_container .app-footer .app-footer__inner, .ms_body_container .ms_header_container {
+        background: #fafbfc
+    }
+
+    .ms_body_container.fixed-header .ms_header_container__logo {
+        background: rgba(250,251,252,.1)
+    }
+
+
+.ms_header_container {
+    height: 60px;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    z-index: 10;
+    transition: all .2s
+}
+
+    .ms_header_container.header_shadow {
+        box-shadow: 0 .46875rem 2.1875rem rgba(4,9,20,.03),0 .9375rem 1.40625rem rgba(4,9,20,.03),0 .25rem .53125rem rgba(4,9,20,.05),0 .125rem .1875rem rgba(4,9,20,.03)
+    }
+
+    .ms_header_container .ms_header_container__content {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex: 1;
+        padding: 0 1.5rem;
+        height: 60px
+    }
+
+        .ms_header_container .ms_header_container__content .ms_header_container-left {
+            display: flex;
+            align-items: center
+        }
+
+        .ms_header_container .ms_header_container__content .header-menu .nav-link {
+            color: #6c757d
+        }
+
+            .ms_header_container .ms_header_container__content .header-menu .nav-link i {
+                color: #adb5bd
+            }
+
+            .ms_header_container .ms_header_container__content .header-menu .nav-link:hover {
+                color: #212529
+            }
+
+        .ms_header_container .ms_header_container__content .ms_header_container-right {
+            align-items: center;
+            display: flex;
+            margin-left: auto
+        }
+
+    .ms_header_container .header-user-info > .widget-heading, .ms_header_container .header-user-info > .widget-subheading {
+        white-space: nowrap
+    }
+
+    .ms_header_container .header-user-info > .widget-subheading {
+        font-size: .8rem
+    }
+
+.ms_header {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+.ms_header_left {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ms_header_left_text {
+    color: rgb(2 132 199/var(--tw-text-opacity));
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-family: Righteous;
+    text-decoration: none !important;
+    display: flex;
+}
+
+.ms_header_right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
